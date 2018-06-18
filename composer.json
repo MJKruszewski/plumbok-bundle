@@ -1,0 +1,32 @@
+{
+  "name": "MJKruszewski/plumbok-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Plumbok Bundle",
+  "keywords": ["plumbok", "lombok", "symfony", "bundle"],
+  "homepage": "https://github.com/MJKruszewski/plumbok-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maciej Kruszewski",
+      "email": "m.kruszewski@sunflux.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MJKruszewski\\PlumbokBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "require": {
+    "php": "^7.0",
+    "symfony/framework-bundle": "^4.0",
+    "plumbok/plumbok": "^0.10.1",
+    "symfony/yaml": "^4.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4",
+    "phpunit/php-code-coverage": "^5.0"
+  }
+}
