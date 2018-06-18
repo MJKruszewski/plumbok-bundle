@@ -1,5 +1,5 @@
 {
-  "name": "MJKruszewski/plumbok-bundle",
+  "name": "mjkruszewski/plumbok-bundle",
   "type": "symfony-bundle",
   "description": "Symfony Plumbok Bundle",
   "keywords": ["plumbok", "lombok", "symfony", "bundle"],
