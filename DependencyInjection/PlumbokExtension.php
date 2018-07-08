@@ -3,7 +3,6 @@
 namespace MJKruszewski\PlumbokBundle\DependencyInjection;
 
 
-use Plumbok\Cache\FileCache;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
@@ -23,9 +22,6 @@ class PlumbokExtension extends ConfigurableExtension
      */
     protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
-        $plumbokCacheDir = $mergedConfig['dir'] ?? $mergedConfig['default']['dir'];
-        $plumbokNamespaces = $mergedConfig['namespaces'] ?? [];
-
         foreach ($mergedConfig as $name => $value) {
             $container->setParameter(
                 'plumbok.' . $name,
