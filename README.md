@@ -35,21 +35,21 @@ plumbok:
 ## Project Maintainers
 * Maciej Kruszewski
 
-### Related Libraries
+## Related Libraries
 * [MJKruszewski/plumbok](https://github.com/MJKruszewski/plumbok)
 * [plumbok/plumbok](https://github.com/plumbok/plumbok)
 
-### Annotations
+## Annotations 
 
-#### Property Annotations
-* @ToString
-* @Getter
-* @Setter
+* Property Annotations
+    * @ToString
+    * @Getter
+    * @Setter
 
-#### Class Annotations
-* @AllArgsConstructor
-* @RequiredArgsConstructor
-* @NoArgsConstructor
-* @Data
-* @Value
-* @EqualTo
+* Class Annotations
+    * @AllArgsConstructor
+    * @RequiredArgsConstructor
+    * @NoArgsConstructor
+    * @Data
+    * @Value
+    * @EqualTo
