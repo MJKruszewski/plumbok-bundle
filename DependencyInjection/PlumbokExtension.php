@@ -11,6 +11,14 @@ class PlumbokExtension extends ConfigurableExtension
 {
 
     /**
+     * {@inheritdoc}
+     */
+    public function getAlias(): string
+    {
+        return 'plumbok';
+    }
+
+    /**
      * Configures the passed container according to the merged configuration.
      */
     protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
@@ -18,18 +26,11 @@ class PlumbokExtension extends ConfigurableExtension
         $plumbokCacheDir = $mergedConfig['dir'] ?? $mergedConfig['default']['dir'];
         $plumbokNamespaces = $mergedConfig['namespaces'] ?? [];
 
-        $fileCache = new FileCache($plumbokCacheDir);
-
-        foreach ($plumbokNamespaces as $namespace) {
-            \Plumbok\Autoload::register($namespace, $fileCache);
+        foreach ($mergedConfig as $name => $value) {
+            $container->setParameter(
+                'plumbok.' . $name,
+                $value
+            );
         }
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getAlias(): string
-    {
-        return 'pb_plumbok';
     }
 }

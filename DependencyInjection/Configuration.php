@@ -16,7 +16,7 @@ class Configuration implements ConfigurationInterface
     {
         $builder = new TreeBuilder();
         $builder
-            ->root('pb_plumbok')
+            ->root('plumbok')
                 ->children()
                     ->scalarNode('dir')
                         ->defaultValue('%kernel.cache_dir%/plumbok')
