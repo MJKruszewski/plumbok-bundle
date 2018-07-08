@@ -20,9 +20,9 @@
     ]
   },
   "require": {
-    "php": "^7.0",
+    "php": "^7.1",
     "symfony/framework-bundle": "^4.0",
-    "plumbok/plumbok": "^0.10.1",
+    "mjkruszewski/plumbok": "^1.0",
     "symfony/yaml": "^4.1"
   },
   "require-dev": {
