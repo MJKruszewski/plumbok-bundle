@@ -9,6 +9,29 @@ and cleaner code.
 * PHP 7.1
 * Symfony 4.0 <
 
+**Installation**
+
+```composer require mjkruszewski/plumbok-bundle```
+
+Create config in Symfony:
+
+```%Symfony.Project.Path%/config/packages/plumbok.yaml```
+
+Add entries to it as:
+
+```yaml
+plumbok:
+    dir: '%kernel.cache_dir%/plumbok'
+    namespaces: [
+      'App\Entity',
+      'App\Exceptions',
+      'App\Controller\Dto'
+      ]
+```
+
+* Dir field is not required
+* Namespaces from src/* catalogue under symfony project
+
 ## Project Maintainers
 * Maciej Kruszewski
 
