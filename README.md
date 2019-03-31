@@ -29,6 +29,25 @@ plumbok:
       ]
 ```
 
+Change configuration for doctrine entries:
+```yaml
+doctrine:
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            App:
+                is_bundle: false
+                type: annotation
+                #CHANGE BELOW PATH TO CACHE DIR
+                dir: '%kernel.cache_dir%/plumbok'
+                #########
+                prefix: 'App\Entity'
+                alias: App
+
+```
+
 * Dir field is not required
 * Namespaces from src/* catalogue under symfony project
 
