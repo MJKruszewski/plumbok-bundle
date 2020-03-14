@@ -21,7 +21,7 @@
   },
   "require": {
     "php": "^7.1",
-    "symfony/framework-bundle": "^4.0",
+    "symfony/framework-bundle": "^5.0",
     "mjkruszewski/plumbok": "^1.0",
     "symfony/yaml": "^4.1"
   },
